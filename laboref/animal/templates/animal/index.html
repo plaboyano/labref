@@ -1,0 +1,21 @@
+{%extends 'core/base.html'%}
+
+{% block content %}
+
+{% if animal_list %}
+<ul>
+    {% for animal in animal_list %}
+    <li> <a href="/animal/{{ animal.id }}/">{{ animal.animal_name }} </a> </li>
+    {% endfor %}
+</ul>
+
+<li> <a class="btn btn-success" href="/animal/new/">Nuevo Registro </a> </li>
+
+
+{% else %}
+
+<p>No animal are available.</p>
+
+{% endif %}
+
+{% endblock%}
