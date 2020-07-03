@@ -16,11 +16,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from animal.urls import animal_patterns
-from core.urls import core_patterns
-from adoptions.urls import adoptions_patterns
-from blog.urls import blog_patterns
-from contacts.urls import contacts_patterns
+from applications.animal.urls import animal_patterns
+from applications.core.urls import core_patterns
+from applications.adoptions.urls import adoptions_patterns
+from applications.blog.urls import blog_patterns
+from applications.contacts.urls import contacts_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),

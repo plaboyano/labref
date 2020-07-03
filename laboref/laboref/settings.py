@@ -34,12 +34,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core.apps.CoreConfig',
-    'animal',
-    'contacts',
-    'blog',
-    'adoptions',
-    'news',
+    'applications.core.apps.CoreConfig',
+    'applications.animal',
+    'applications.contacts',
+    'applications.blog',
+    'applications.adoptions',
+    'applications.news',
     'bootstrap4',
 ]
 
