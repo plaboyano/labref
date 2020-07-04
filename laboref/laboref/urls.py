@@ -21,6 +21,7 @@ from applications.core.urls import core_patterns
 from applications.adoptions.urls import adoptions_patterns
 from applications.blog.urls import blog_patterns
 from applications.contacts.urls import contacts_patterns
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,3 +31,8 @@ urlpatterns = [
     path('blog/', include(blog_patterns)),
     path('contacts/', include(contacts_patterns)),
 ]
+
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,13 +1,20 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
+from .models import ItemSlider
 
-
+"""
 class IndexView(TemplateView):
     template_name = "core/home.html"
 
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name, {"title": "Laboref"})
+"""
 
 
 class AboutView(TemplateView):
     template_name = "core/about-us.html"
+
+
+class ItemSliderListView(ListView):
+    model = ItemSlider
+    template_name = "core/home.html"
