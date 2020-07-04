@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'applications.adoptions',
     'applications.news',
     'bootstrap4',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
