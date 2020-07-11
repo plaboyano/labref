@@ -663,3 +663,11 @@ footer address {
 	line-height: 18px;
 	margin-top: -1px;
 }
+
+/* Para centrar imagenes */
+.center_image {
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    background:#f8f8f8;
+}
