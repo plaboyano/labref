@@ -22,6 +22,7 @@ class IndexListView(ListView):
     items = ItemSlider.objects.all()
     news = News.objects.all()
 
+
     def get_context_data(self, *, object_list=None, **kwargs):
 
         context = super(IndexListView, self).get_context_data(**kwargs)

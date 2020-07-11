@@ -134,7 +134,6 @@
           </div>
         </li>
 
-        <!--
         <li class="grid_4"> <img src="{% static 'core/images/carousel1_img1.jpg' %}" alt="" class="img_inner fleft">
           <div class="extra_wrapper pad1">
             <p class="col2"><a href="#">Praesent quis orcidiam viverralopr </a></p>
@@ -145,11 +144,15 @@
             <p class="col2"><a href="#">Aeraesent quis hoj rcieget diam iverral.</a></p>
             Loaesent quis orci diam viverralopr con equat. Lusce sagittis quam ihui hyhy opir pulvinarhjk velit. </div>
         </li>
-        <li class="grid_4"> <img src="{% static 'core/images/carousel1_img3.jpg' %}" alt="" class="img_inner fleft">
+        <li class="grid_4">
+          <img src="{% static 'core/images/icon1.png' %}" alt="" class="img_inner fleft"> <br>
+          <img src="{% static 'core/images/icon2.png' %}" alt="" class="img_inner fleft">
           <div class="extra_wrapper pad1">
-            <p class="col2"><a href="#">Tyeraesent quis hojo rcieget iam iverralji.</a></p>
-            Eroaesent quis orci ediam viverralopr con jikjulo poiu retyulo hyk equat. Usce sagittis ki quam ihui hyhy opirp. </div>
+            <p class="col2"><a href="{% url 'adoptions:home' %}">Ver más</a></p>
+            Loaesent quis orci diam viverralopr con equat. Lusce sagittis quam ihui hyhy opir pulvinarhjk velit. </div>
         </li>
+
+        <!--
         <li class="grid_4"> <img src="{% static 'core/images/carousel1_img4.jpg' %}" alt="" class="img_inner fleft">
           <div class="extra_wrapper pad1">
             <p class="col2"><a href="#">Aeraesent quis hoj rcieget diam iverral.</a></p>
