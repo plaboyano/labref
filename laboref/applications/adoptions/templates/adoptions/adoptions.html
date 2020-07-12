@@ -4,4 +4,29 @@
 
 {% block page1_block %} {% endblock %}
 
+{% block content %}
+{% load static %}
+  <div class="content page1">
+    <div class="container_12">
+      <div class="grid_12">
+        <h2>Mascotas en adopción</h2>
+      </div>
+      <div class="clear"></div>
+      <ul>
+        {% for animal in animal_list  %}
+          <li class="grid_4"> <img src="{{ animal.animal_image.url }}" alt="" class="img_inner fleft center_image" >
+            <div class="extra_wrapper pad1 style1">
+              <p class="col2"> <h3 class="h_modified" > <a href="#">  {{ animal.animal_name }}  </a> </h3>  </p>
+              Edad: {{ animal.animal_age }} años <br>
+              Raza: {{ animal.animal_breed }}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock %}
+
+
 {% block tips_more %}{% endblock %}
+

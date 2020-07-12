@@ -657,8 +657,6 @@ footer p {
 	padding-top: 6px;
 }
 
-
-
 footer address {
 	line-height: 18px;
 	margin-top: -1px;
@@ -670,4 +668,27 @@ footer address {
     height:150px;
     object-fit:contain;
     background:#f8f8f8;
+}
+
+.h_modified {
+    color: #f98d0d;
+    font-size: 20px;
+}
+.image_details {
+position: absolute;
+top: 39%;
+left: 44%;
+z-index: 1;
+background: #00000078;
+height: 44px;
+width: 47px;
+border-radius: 50%;
+font-size: 50px;
+padding-top: 17px;
+padding-left: 16px;
+color: white;
+}
+.image_details:hover{
+    cursor: pointer;
+    background: black;
 }

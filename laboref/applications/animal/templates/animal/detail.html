@@ -1,17 +1,33 @@
 {%extends 'core/base.html'%}
 
+
 {% block content %}
-<h1> {{ animal.animal_name }} </h1>
-<h4> Raza: {{ animal.animal_breed }} </h4>
-<h4> Color: {{ animal.animal_color }} </h4>
-<h4> Edad (años): {{ animal.animal_age }} </h4>
-<td> <a class=btn href="/animal/edit/{{animal.id}}"> <i class="icon-pencil"></i> Editar </a> </td>
+{% load static %}
 
-<!--
- {%if user.is_authenticated %}
-    <td> <a class=btn href="/edit/animal/{{animal.id}}"> <i class="icon-pencil"></i> Editar </a> </td>
- {% endif %}
- -->
+<div style="margin: 20px; display: flex; justify-content: space-between; align-items: flex-start;">
 
-<button class="btn btn-success"> Adoptar </button>
+   <div style="width: 30%; position: relative;" >
+      <span class="image_details"> +</span>
+      <img style="width: 100%; opacity: 0.8; border-radius: 10px; box-shadow: 0 3px 16px -3px #000" src="{% static 'core/images/page1_img5.jpg' %}" />
+   </div>
+
+  <div style="width: 60%">
+      <h1 class="h_modified"> {{ animal.animal_name }} </h1><br>
+      <b> Raza: {{ animal.animal_breed }} </b><br>
+      <b> Color: {{ animal.animal_color }} </b><br>
+      <b> Edad (años): {{ animal.animal_age }} </b><br>
+     <a class="btn icon-pencil " style="border-radius: 4px"> Adoptar </a>
+  </div>
+
+   <!--
+   <td> <a class=btn href="/animal/edit/{{animal.id}}"> <i class="icon-pencil"></i> Editar </a> </td>
+
+   {%if user.is_authenticated %}
+      <td> <a class=btn href="/edit/animal/{{animal.id}}"> <i class="icon-pencil"></i> Editar </a> </td>
+   {% endif %}
+   -->
+
+
+
+</div>
 {% endblock %}

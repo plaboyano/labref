@@ -75,7 +75,7 @@
         {% for animal in animals  %}
           <li class="grid_4"> <img src="{{ animal.animal_image.url }}" alt="" class="img_inner fleft center_image" >
             <div class="extra_wrapper pad1 style1">
-              <p class="col2"> <a href="#">{{ animal.animal_name }}</a>  </p>
+              <p class="col2"> <a href="{% url 'animal:detail_animal' animal.id %}">{{ animal.animal_name }}</a>  </p>
               Edad: {{ animal.animal_age }} años <br>
               {{ animal.animal_breed }}
             </div>

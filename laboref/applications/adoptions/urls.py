@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import IndexView
+from .views import IndexListView
 
 adoptions_patterns = ([
-    path('', IndexView.as_view(), name='home'),
+    path('', IndexListView.as_view(), name='home'),
     ], 'adoptions')
