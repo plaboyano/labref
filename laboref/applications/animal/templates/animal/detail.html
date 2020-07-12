@@ -7,8 +7,7 @@
 <div style="margin: 20px; display: flex; justify-content: space-between; align-items: flex-start;">
 
    <div style="width: 30%; position: relative;" >
-      <span class="image_details"> +</span>
-      <img style="width: 100%; opacity: 0.8; border-radius: 10px; box-shadow: 0 3px 16px -3px #000" src="{% static 'core/images/page1_img5.jpg' %}" />
+      <img class="image_pet_detail" src="{{ animal.animal_image.url }}" />
    </div>
 
   <div style="width: 60%">
@@ -26,8 +25,8 @@
       <td> <a class=btn href="/edit/animal/{{animal.id}}"> <i class="icon-pencil"></i> Editar </a> </td>
    {% endif %}
    -->
-
-
-
 </div>
 {% endblock %}
+
+{% block tips_more %}
+<hr> {% endblock %}

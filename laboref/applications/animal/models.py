@@ -42,7 +42,6 @@ class AnimalColor(models.Model):
 
 
 # animal
-
 class Animal(models.Model):
     animal_name = models.CharField(max_length=255)
     animal_breed = models.ForeignKey(Breed, on_delete=models.DO_NOTHING)
@@ -58,3 +57,10 @@ class Animal(models.Model):
 
     def __str__(self):
         return self.animal_name
+
+
+# animals images
+class AnimalImage(models.Model):
+    image_description = models.TextField()
+    image_url = models.ImageField(upload_to='animal/', default='media/None/no-img.jpg')
+    image_animal = models.ForeignKey(Animal, on_delete=models.CASCADE)

@@ -692,3 +692,10 @@ color: white;
     cursor: pointer;
     background: black;
 }
+
+.image_pet_detail {
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: 0 3px 16px -3px #000;
+}
