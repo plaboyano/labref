@@ -672,7 +672,7 @@ footer address {
 
 .h_modified {
     color: #f98d0d;
-    font-size: 20px;
+    font-size: 25px;
 }
 .image_details {
 position: absolute;
@@ -698,4 +698,16 @@ color: white;
     opacity: 0.8;
     border-radius: 10px;
     box-shadow: 0 3px 16px -3px #000;
+}
+
+.btn-laboref {
+    border-radius: 4px
+}
+
+.content-detail {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
 }

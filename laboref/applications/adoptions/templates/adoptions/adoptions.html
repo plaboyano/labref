@@ -16,7 +16,7 @@
         {% for animal in animal_list  %}
           <li class="grid_4"> <img src="{{ animal.animal_image.url }}" alt="" class="img_inner fleft center_image" >
             <div class="extra_wrapper pad1 style1">
-              <p class="col2"> <h3 class="h_modified" > <a href="#">  {{ animal.animal_name }}  </a> </h3>  </p>
+              <p class="col2"> <h3 class="h_modified" > <a href="{% url 'animal:detail_animal' animal.id %}">  {{ animal.animal_name }}  </a> </h3>  </p>
               Edad: {{ animal.animal_age }} años <br>
               Raza: {{ animal.animal_breed }}
             </div>
