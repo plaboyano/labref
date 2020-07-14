@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'applications.contacts',
     'applications.blog',
     'applications.adoptions',
-    'applications.collaborator',
-    'applications.about',
+    'applications.about.apps.AboutConfig',
     'ckeditor',
 ]
 
