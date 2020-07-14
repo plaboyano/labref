@@ -21,6 +21,7 @@ from applications.core.urls import core_patterns
 from applications.adoptions.urls import adoptions_patterns
 from applications.blog.urls import blog_patterns
 from applications.contacts.urls import contacts_patterns
+from applications.about.urls import about_patterns
 from django.conf import settings
 
 urlpatterns = [
@@ -30,6 +31,7 @@ urlpatterns = [
     path('adoptions/', include(adoptions_patterns)),
     path('blog/', include(blog_patterns)),
     path('contacts/', include(contacts_patterns)),
+    path('about/', include(about_patterns)),
 ]
 
 

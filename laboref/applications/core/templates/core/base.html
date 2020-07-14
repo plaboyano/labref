@@ -91,7 +91,7 @@
           <nav>
             <ul class="sf-menu">
               <li class="current {% if request.path == '/home/' %} active {% endif %} "><a href="{% url 'core:home' %}">Inicio</a></li>
-              <li class="with_ul {% if request.path == '/about/' %} active {% endif %} "><a href="{% url 'core:about' %}">Nosotros</a>
+              <li class="with_ul {% if request.path == '/about/' %} active {% endif %} "><a href="{% url 'about:home' %}">Nosotros</a>
                 <!--
                 <ul>
                   <li><a href="#">Testimonials</a></li>
