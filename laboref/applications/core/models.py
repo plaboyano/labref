@@ -39,3 +39,19 @@ class News(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Welcome(models.Model):
+    title = models.CharField(verbose_name='Título', max_length=40)
+    image = models.ImageField(upload_to="welcome", null=True, blank=True)
+    content = RichTextField(verbose_name="Contenido")
+    created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creación")
+    updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de edición")
+
+    class Meta:
+        verbose_name = "Bienvenida"
+        verbose_name_plural = "Bienvenidas"
+        ordering = ['created']
+
+    def __str__(self):
+        return self.title

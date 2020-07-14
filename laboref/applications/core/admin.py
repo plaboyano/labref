@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ItemSlider, News
+from .models import ItemSlider, News, Welcome
 
 
 class HomeAdmin(admin.ModelAdmin):
@@ -7,4 +7,5 @@ class HomeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(ItemSlider)
+admin.site.register(Welcome)
 admin.site.register(News, HomeAdmin)
